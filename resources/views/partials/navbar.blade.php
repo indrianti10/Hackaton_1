@@ -3,7 +3,7 @@
     <div class="container">
         <div class="flex items-center justify-between relative">
             <div class="px-4">
-                <a href="#home" class="font-bold text-lg text-primary block pt-6 lg:pt-2">
+                <a href="/" class="font-bold text-lg text-primary block pt-6 lg:pt-2">
                 <img src="/img/logo.png" width="150px" alt="Flowbite Logo" /></a>
             </div>
             <div class="flex items-center px-4 pt-2">
@@ -51,13 +51,13 @@
     
                         </li>
                         <li class="group">
-                            <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beli</a>
+                            <a href="/beli" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beli</a>
                         </li>
                         <li class="group">
-                            <a href="/type_car" class="text-base  text-dark py-2 mx-8  flex group-hover:text-primary">Tentang Kami</a>
+                            <a href="/tentang_kami" class="text-base  text-dark py-2 mx-8  flex group-hover:text-primary">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="/type_car" class="text-base  text-dark py-2 mx-8 flex group-hover:text-primary">Asuransi</a>
+                            <a href="/asuransi" class="text-base  text-dark py-2 mx-8 flex group-hover:text-primary">Asuransi</a>
                         </li>
                     @auth
                         <div class="flex  items-center ml-16 mt-2 lg:mt-0  text-primary hover:opacity-30">
@@ -72,7 +72,7 @@
                         </div>
 
                         <!-- Dropdown menu -->
-                        <div class="z-50 hidden my-4 text-base list-none bg-[#EDF2F4] divide-y divide-gray-300 rounded-lg shadow" id="user-dropdown">;'//'
+                        <div class="z-50 hidden my-4 text-base list-none bg-[#EDF2F4] divide-y divide-gray-300 rounded-lg shadow" id="user-dropdown">
                             <div class="px-4 py-3">
                                 <span class="block text-sm text-gray-900 ">{{ auth()->user()->name }}</span>
                                 <span class="block text-sm text-gray-500 truncate">{{ auth()->user()->email }}</span>

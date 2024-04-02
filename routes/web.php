@@ -27,23 +27,20 @@ use App\Http\Controllers\DashboardCustomerController;
 // Home
 Route::get('/', function () {
     return view('index', [
-        'cars' => Car::all(),
-        'makes' => Make::all()
+        
     ]);
 });
-
-// Type Car
-Route::get('/type_car', function () {
-    return view('type_car', [
-        'cars' => Car::all(),
-        'makes' => Make::all()
-    ]);
-    
-});
-
 // About us
-Route::get('/about_us', function () {
-    return view('about_us');
+Route::get('/tentang_kami', function () {
+    return view('tentang_kami');
+});
+// beli
+Route::get('/beli', function () {
+    return view('beli');
+});
+// asuransi
+Route::get('/asuransi', function () {
+    return view('asuransi');
 });
 
 // reservation
@@ -64,32 +61,6 @@ Route::group(['middleware' => 'guest'], function () {
 // Logout
 Route::post('/logout', [LoginController::class, 'logout']);
 
-
-// Auth Google
-Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
-Route::get('/auth/google/call-back', [GoogleController::class, 'handleGoogleCallback']);
 // Register Login 
 Route::get('/register/google', [GoogleController::class, 'index']);
 Route::post('/register/google', [GoogleController::class, 'store']);
-
-// Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-})->middleware('userAkses:admin');
-
-Route::middleware(['auth'])->group(function () {
-    Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('userAkses:admin');
-    Route::resource('/dashboard/car', DashboardCarController::class)->middleware('userAkses:admin');
-    Route::resource('/dashboard/reservation', ReservationController::class)->middleware('userAkses:admin');
-    Route::resource('/dashboard/news', DashboardNewsController::class)->middleware('userAkses:admin');
-});
-
-Route::resource('/reservation', ReservationController::class);
-
-// PDF Report
-Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
-Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');
-
-//news Api
-Route::get('/news', [NewsController::class, 'index']);
-Route::get('/fetch-news', [NewsController::class, 'fetchNews']);

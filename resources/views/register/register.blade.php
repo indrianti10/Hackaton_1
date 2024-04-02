@@ -1,11 +1,10 @@
-@extends('layouts.mainlogin')
-
+@extends('layouts.main')
 @section('container')
-    <section class="pt-2">
-        <div class="container">
+    <section class="pt-24">
+        <div class="container pb-16">
             <div class="w-full lg:grid lg:grid-cols-2 lg:gap-2">
                 <div class="flex flex-col items-center justify-center">
-                    <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px] lg:mt-14" h-70 alt="">
+                    <img src="/img/logo.png" class="w-[200px] mt-16 lg:w-[300px] lg:mt-14" h-70 alt="">
                 </div>
                 <div class="flex flex-col items-center justify-center lg:mr-20 lg:mt-[50px]">
                     <div class="max-w-md px-8 py-6 bg-primary bg-opacity-30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 lg:w-full">
@@ -46,13 +45,6 @@
                             </div>
 
                             <button type="submit" class="flex items-start justify-center w-full text-white bg-primary font-bold hover:bg-gray-300 hover:text-primary focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">Create Account</button>
-                            <p class="text-center">Or</p>
-                            
-                             <!-- Button Login with Google -->
-                            <button onclick="window.location.href='{{ route('google.login') }}'" type="submit" class="flex items-start justify-center w-full text-primary bg-white font-bold hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">
-                                <img src="/img/google.png" class="w-5 h-5" alt="">
-                              Register with Google
-                            </button>
                             <p class="text-sm font-light text-dark">Do not have an account? 
                                 <a href="/login" class="font-bold text-primary-600 text-blue-700 hover:underline">Login here</a>
                             </p> 

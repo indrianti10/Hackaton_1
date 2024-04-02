@@ -269,7 +269,7 @@
                             <h1 class=" text-xs font-semibold">Bandung</h1>
                             <p class=" text-[8px] text-slate-500">366 properti</p>
                         </div>
-                        <img src="./img/bandung.png" class=" mt-[2px] rounded-lg"  alt="">
+                        <img src="./img/bandung.png" class=" mt-[-26px] rounded-lg"  alt="">
                     </div>
                 </a>
                 <a href="">
@@ -278,7 +278,7 @@
                             <h1 class=" text-xs font-semibold">Surabaya</h1>
                             <p class=" text-[8px] text-slate-500">169 properti</p>
                         </div>
-                        <img src="./img/surabaya.png" class=" mt-[2px] rounded-lg"  alt="">
+                        <img src="./img/surabaya.png" class=" mt-[-26px] rounded-lg"  alt="">
                     </div>
                 </a>
                 <a href="">
@@ -287,7 +287,7 @@
                             <h1 class=" text-xs font-semibold">Makasar </h1>
                             <p class=" text-[8px] text-slate-500">203 properti</p>
                         </div>
-                        <img src="./img/makassar.png" class=" mt-[2px] rounded-lg"  alt="">
+                        <img src="./img/makassar.png" class=" mt-[-26px] rounded-lg"  alt="">
                     </div>
                 </a>
                 <a href="">
@@ -296,7 +296,7 @@
                             <h1 class=" text-xs font-semibold">Jakarta</h1>
                             <p class=" text-[8px] text-slate-500">52 properti</p>
                         </div>
-                        <img src="./img/jakarta.png" class=" mt-[2px] rounded-lg"  alt="">
+                        <img src="./img/jakarta.png" class=" mt-[-26px] rounded-lg"  alt="">
                     </div>
                 </a>
                 <a href="">
@@ -305,7 +305,7 @@
                             <h1 class=" text-xs font-semibold">Medan</h1>
                             <p class=" text-[8px] text-slate-500">142 properti</p>
                         </div>
-                        <img src="./img/medan.png" class=" mt-[2px] rounded-lg"  alt="">
+                        <img src="./img/medan.png" class=" mt-[-26px] rounded-lg"  alt="">
                     </div>
                 </a>
             </div>
@@ -314,7 +314,7 @@
 {{--  end properti kota --}}
 
 {{-- map --}}
-<section id="about" class="">
+<section id="map" class="">
     <h1 class=" text-2xl font-extrabold ml-8 mt-10"> Ada Apa Disekitarmu ?</h1>
     <div class="container mx-auto px-4 mt-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -338,19 +338,19 @@
                 
               <h3 class="font-bold mt-4">Transportasi Terdekat</h3>
               <ul>
-                <li class=" text-amber-400">Travel Bandung</li>
-                <li class=" text-blue-600">Kramat Djati</li>
-                <li class=" text-red-500">Bhineka Shuttle Cimahi</li>
+                <a href="https://www.google.com/maps/place/Travel+Bandung+Magelang+Temanggung/@-6.87806,107.541315,16z/data=!4m6!3m5!1s0x2e68e51891c63ab7:0xaf1a4bb4fab722e8!8m2!3d-6.8802279!4d107.542442!16s%2Fg%2F11scs5vl_g?hl=id&entry=ttu"><li class=" text-amber-400 hover:text-amber-800">Travel Bandung</li></a>
+                <a href="https://www.google.com/maps?ll=-6.879147,107.54021&z=17&t=m&hl=id&gl=ID&mapclient=embed&cid=7450729449855998161"><li class=" text-blue-600 hover:text-blue-950">Kramat Djati</li></a>
+                <a href="https://www.google.com/maps/place/Bhinneka+Shuttle+Cimahi/@-6.87806,107.541315,16z/data=!4m6!3m5!1s0x2e68e5f65390c87b:0x78ef28bdf08ab0a2!8m2!3d-6.8789514!4d107.5395277!16s%2Fg%2F11kpz_r_b9?hl=id&entry=ttu"><li class=" text-red-500 hover:text-red-800">Bhineka Shuttle Cimahi</li></a>
               </ul>
               <h3 class="font-bold mt-4">Tempat Makan Terdekat</h3>
               <ul>
-                <li class=" text-violet-600">Meepang Rai</li>
-                <li class=" text-green-600">Wingz O Wingz Cimahi</li>
+                <a href="https://www.google.com/maps/place/Meepang+RAI/@-6.877677,107.543332,16z/data=!4m6!3m5!1s0x2e68e5c93fb78697:0xe04c39cdb7a4421f!8m2!3d-6.8774464!4d107.5438024!16s%2Fg%2F11sd3wc4zc?hl=id&entry=ttu"><li class=" text-violet-600 hover:text-violet-950">Meepang Rai</li></a>
+                <a href="https://www.google.com/maps?ll=-6.87838,107.542345&z=16&t=m&hl=id&gl=ID&mapclient=embed&cid=1605963313020792266"><li class=" text-green-600 hover:text-green-950">Wingz O Wingz Cimahi</li></a>
               </ul>
             </div>
           </div>
         </div>
-      </div>
+      </div>    
 </section>
 {{-- map --}}
 
